@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style-build.css">
+
+
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<body>
+
+    <div role="navigation" class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand">淘兴趣</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <form role="form" class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="用户名">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" placeholder="密码">
+            </div>
+            <button class="btn btn-success" type="submit">登录</button>
+            <button class="btn btn-success" type="submit">注册</button>
+            <button class="btn btn-warning" type="submit">发起兴趣</button>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+
+<div class="wrap">
+
+<div class="inner edge">
+    <h2 class="common-title">提出新问题</h2>
+
+<form method="post" action="http://segmentfault.com/question/post" id="ask">
+        <div id="edit-main">
+        <div class="edit-post" id="content">
+            <div class="p" style="position: relative;">
+                <label class="hid" for="title">标题</label>
+                <input type="text" holder="标题，用一句话说清你的问题" spellcheck="false" autocomplete="off" class="text-34 placeholder" value="" tabindex="1" name="title"><div class="placeholder-wrap" style="font-family: &quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif; font-size: 16px; font-weight: 400; font-style: normal; color: rgb(153, 153, 153); -moz-box-sizing: inherit; text-transform: none; text-decoration: none; letter-spacing: 0px; box-shadow: none; line-height: 20px; text-align: start; vertical-align: middle; direction: ltr; background: none repeat scroll 0% 0% transparent; opacity: 1; width: 624px; height: 20px; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; padding: 10px 9px; border: medium none; position: absolute; display: block; visibility: visible; z-index: 10; overflow: visible; white-space: normal; clip: auto; float: none; clear: none; cursor: text; list-style: disc outside none; marker-offset: auto;">标题，用一句话说清你的问题</div>
+                            </div>
+
+            <div id="wmd-button-bar"><ul id="wmd-button-row" class="wmd-button-row"><li class="wmd-button" style="left: 0px;" id="wmd-bold-button" title="加粗 &lt;strong&gt; Ctrl+B"><span style="background-position: 0px 0px;"></span></li><li class="wmd-button" style="left: 25px;" id="wmd-italic-button" title="斜体 &lt;em&gt; Ctrl+I"><span style="background-position: -20px 0px;"></span></li><li class="wmd-spacer wmd-spacer1" id="wmd-spacer1"></li><li class="wmd-button" style="left: 75px;" id="wmd-link-button" title="链接 &lt;a&gt; Ctrl+L"><span style="background-position: -40px 0px;"></span></li><li class="wmd-button" style="left: 100px;" id="wmd-quote-button" title="引用 &lt;blockquote&gt; Ctrl+Q"><span style="background-position: -60px 0px;"></span></li><li class="wmd-button" style="left: 125px;" id="wmd-code-button" title="代码 &lt;pre&gt;&lt;code&gt; Ctrl+K"><span style="background-position: -80px 0px;"></span></li><li class="wmd-button" style="left: 150px;" id="wmd-image-button" title="图片 &lt;img&gt; Ctrl+G"><span style="background-position: -100px 0px;"></span></li><li class="wmd-spacer wmd-spacer2" id="wmd-spacer2"></li><li class="wmd-button" style="left: 200px;" id="wmd-olist-button" title="数字列表 &lt;ol&gt; Ctrl+O"><span style="background-position: -120px 0px;"></span></li><li class="wmd-button" style="left: 225px;" id="wmd-ulist-button" title="普通列表 &lt;ul&gt; Ctrl+U"><span style="background-position: -140px 0px;"></span></li><li class="wmd-button" style="left: 250px;" id="wmd-heading-button" title="标题 &lt;h1&gt;/&lt;h2&gt; Ctrl+H"><span style="background-position: -160px 0px;"></span></li><li class="wmd-button" style="left: 275px;" id="wmd-hr-button" title="分割线 &lt;hr&gt; Ctrl+R"><span style="background-position: -180px 0px;"></span></li><li class="wmd-spacer wmd-spacer3" id="wmd-spacer3"></li><li class="wmd-button" style="left: 325px;" id="wmd-undo-button" title="撤销 - Ctrl+Z"><span style="background-position: -200px -20px;"></span></li><li class="wmd-button" style="left: 350px;" id="wmd-redo-button" title="重做 - Ctrl+Y"><span style="background-position: -220px -20px;"></span></li><li class="wmd-button wmd-help-button active" id="wmd-help-button" style="right: 0px;" title="Markdown语法帮助"><span style="background-position: -300px 0px;"></span></li></ul></div>
+
+            <div class="p">
+                <div class="editor-help">
+    <ul class="editor-help-tabs" style="display: block;">
+        <li rel="heading">标题 / 粗斜体</li><!--
+        --><li rel="code">代码</li><!--
+        --><li rel="link">链接</li><!--
+        --><li rel="image">图片</li><!--
+        --><li rel="split">换行 / 分隔符</li><!--
+        --><li rel="list">列表 / 引用</li><!--
+        --><li class="right"><a target="_blank" href="http://segmentfault.com/q/1010000000187808">高级技巧</a></li>
+    </ul>
+
+<!-- 链接 -->
+<div rel="link" class="editor-help-content hidden">
+
+<p>常用链接方法</p>
+<pre>文字链接 [链接名称](http://链接网址)
+网址链接 &lt;http://链接网址&gt;
+</pre>
+<p>高级链接技巧</p>
+<pre>这个链接用 1 作为网址变量 [Google][1].
+这个链接用 yahoo 作为网址变量 [Yahoo!][yahoo].
+然后在文档的结尾为变量赋值（网址）
+
+<i class="nbsp">&nbsp;</i><i class="nbsp">&nbsp;</i>[1]: http://www.google.com/
+<i class="nbsp">&nbsp;</i><i class="nbsp">&nbsp;</i>[yahoo]: http://www.yahoo.com/
+</pre>
+
+</div>
+<!-- end 链接 -->
+
+<!-- 图片 -->
+<div rel="image" class="editor-help-content hidden">
+
+<p>跟链接的方法区别在于前面加了个感叹号 <code>!</code>，这样是不是觉得好记多了呢？</p>
+<pre>![图片名称](http://图片网址)
+</pre>
+<p>当然，你也可以像网址那样对图片网址使用变量</p>
+<pre>这个链接用 1 作为网址变量 [Google][1].
+然后在文档的结尾位变量赋值（网址）
+
+<i class="nbsp">&nbsp;</i><i class="nbsp">&nbsp;</i>[1]: http://www.google.com/logo.png
+</pre>
+
+</div>
+<!-- end 图片 -->
+
+<!-- 粗斜体、标题 -->
+<div rel="heading" class="editor-help-content hidden">
+
+<p>文章内容较多时，可以用标题分段：</p>
+<pre>## 大标题 ##
+### 小标题 ###
+</pre>
+
+<p>粗体 / 斜体</p>
+<pre>*斜体文本*    _斜体文本_
+**粗体文本**    __粗体文本__
+***粗斜体文本***    ___粗斜体文本___
+</pre>
+
+</div>
+<!-- end 粗斜体、标题 -->
+
+<!-- 换行、分隔符 -->
+<div rel="split" class="editor-help-content hidden">
+
+<p>如果另起一行，只需在当前行结尾加 2 个空格</p>
+<pre>在当前行的结尾加 2 个空格<i class="nbsp">&nbsp;</i><i class="nbsp">&nbsp;</i>
+这行就会新起一行
+</pre>
+<p>如果是要起一个新段落，只需要空出一行即可。</p>
+<p>如果你有写分割线的习惯，可以新起一行输入三个减号 <code>-</code>：</p>
+<pre>---
+</pre>
+
+</div>
+<!-- end 换行、分隔符 -->
+
+<!-- 列表、引用 -->
+<div rel="list" class="editor-help-content hidden">
+
+<p>普通列表</p>
+<pre>-<i class="nbsp">&nbsp;</i>列表文本前使用 [减号+空格]
++<i class="nbsp">&nbsp;</i>列表文本前使用 [加号+空格]
+*<i class="nbsp">&nbsp;</i>列表文本前使用 [星号+空格]
+</pre>
+<p>带数字的列表</p>
+<pre>1.<i class="nbsp">&nbsp;</i>列表前使用 [数字+空格]
+2.<i class="nbsp">&nbsp;</i>我们会自动帮你添加数字
+7.<i class="nbsp">&nbsp;</i>不用担心数字不对，显示的时候我们会自动把这行的 7 纠正为 3
+</pre>
+<p>引用</p>
+<pre>&gt;<i class="nbsp">&nbsp;</i>引用文本前使用 [大于号+空格]
+&gt;<i class="nbsp">&nbsp;</i>折行可以不加，新起一行都要加上哦
+</pre>
+
+</div>
+<!-- end 列表、引用 -->
+
+<!-- 代码 -->
+<div rel="code" class="editor-help-content hidden">
+
+
+<p>如果你只想高亮语句中的某个函数名或关键字，可以使用 <code>`function_name()`</code> 实现</p>
+<p>通常我们会根据您的代码片段适配合适的高亮方法，但你也可以用 <code>```</code> 包裹一段代码，并指定一种语言</p>
+<pre>```<strong>javascript</strong>
+$(document).ready(function () {
+    alert('hello world');
+});
+```
+</pre>
+<p>支持的语言：<code>actionscript, apache, bash, clojure, cmake, coffeescript, cpp, cs, css, d, delphi, django, erlang, go, haskell, html, http, ini, java, javascript, json, lisp, lua, markdown, matlab, nginx, objectivec, perl, php, python, r, ruby, scala, smalltalk, sql, tex, vbscript, xml</code></p>
+
+<p>您也可以使用 4 空格缩进，再贴上代码，实现相同的的效果</p>
+<pre><i class="nbsp">&nbsp;</i><i class="nbsp">&nbsp;</i><i class="nbsp">&nbsp;</i><i class="nbsp">&nbsp;</i>def g(x):
+<i class="nbsp">&nbsp;</i><i class="nbsp">&nbsp;</i><i class="nbsp">&nbsp;</i><i class="nbsp">&nbsp;</i><i class="nbsp">&nbsp;</i><i class="nbsp">&nbsp;</i><i class="nbsp">&nbsp;</i><i class="nbsp">&nbsp;</i>yield from range(x, 0, -1)
+<i class="nbsp">&nbsp;</i><i class="nbsp">&nbsp;</i><i class="nbsp">&nbsp;</i><i class="nbsp">&nbsp;</i><i class="nbsp">&nbsp;</i><i class="nbsp">&nbsp;</i><i class="nbsp">&nbsp;</i><i class="nbsp">&nbsp;</i>yield from range(x)
+</pre>
+</div>
+<!-- end 代码 -->
+
+</div><!-- end .editor-help -->
+                <label class="hid" for="wmd-input">内容</label>
+                <textarea rows="15" spellcheck="false" autocomplete="off" tabindex="2" name="text" class="textarea-14" id="wmd-input"></textarea><span class="resize"></span>
+                            </div>
+
+            <div class="fmt preview" id="wmd-preview"></div>
+        </div><!-- end #content -->
+    </div><!-- end #edit-main -->
+
+    <div id="edit-secondary">
+        <aside class="warn edit-guide">
+            <h3>提问指南</h3>
+            <ul>
+                <li>内容与技术相关，有明确的答案，有代码贴代码，附上已尝试过的解决方案</li>
+                <li>良好的排版，正确使用 Markdown 语法</li>
+            </ul>
+        </aside>
+
+        <div class="tag-edit-form p q-info rounded-2">
+    <h3 class="required">问题标签（至少 1 个）</h3>
+    <ul class="tag-list show-pop-tag">
+                <li class="add-tag" style="position: relative;">
+            <input type="text" holder="如：php" tabindex="3" autocomplete="off" class="text-28 w-xl tag-input placeholder"><input type="hidden" id="tag-detect" value=""><div class="placeholder-wrap" style="font-family: &quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif; font-size: 14px; font-weight: 400; font-style: normal; color: rgb(153, 153, 153); -moz-box-sizing: inherit; text-transform: none; text-decoration: none; letter-spacing: 0px; box-shadow: none; line-height: 17px; text-align: start; vertical-align: middle; direction: ltr; background: none repeat scroll 0% 0% transparent; opacity: 1; width: 227px; height: 17px; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; padding: 7px 9px; border: medium none; position: absolute; display: block; visibility: visible; z-index: 10; overflow: visible; white-space: normal; clip: auto; float: none; clear: none; cursor: text; list-style: none outside none; marker-offset: auto;">如：php</div>
+            <span class="tag-select active">选择</span>
+                        <input type="button" value="添加" class="btn btn-l tag-input-btn">
+        </li>
+    </ul><div class="tag-all-list" style="display: block;"><ul class="tag-index"><li rel="0" class="current">A-D</li><li rel="1">E-H</li><li rel="2">I-L</li><li rel="3">M-Q</li><li rel="4">R-V</li><li rel="5">W-Z</li></ul><ul class="tag-index-section"><li><a class="tag" data-tid="1040000000089658" href="#">android</a></li><li><a class="tag" data-tid="1040000000089434" href="#">css</a></li><li><a class="tag" data-tid="1040000000089741" href="#">c++</a></li><li><a class="tag" data-tid="1040000000089457" href="#">c</a></li><li><a class="tag" data-tid="1040000000089556" href="#">程序员</a></li><li><a class="tag" data-tid="1040000000089754" href="#">编程</a></li><li><a class="tag" data-tid="1040000000089564" href="#">django</a></li><li><a class="tag" data-tid="1040000000089761" href="#">apache</a></li><li><a class="tag" data-tid="1040000000089407" href="#">chrome</a></li><li><a class="tag" data-tid="1040000000089581" href="#">c#</a></li><li><a class="tag" data-tid="1040000000090169" href="#">ajax</a></li><li><a class="tag" data-tid="1040000000090141" href="#">css3</a></li><li><a class="tag" data-tid="1040000000090533" href="#">安全</a></li><li><a class="tag" data-tid="1040000000089654" href="#">api</a></li><li><a class="tag" data-tid="1040000000089686" href="#">bash</a></li><li><a class="tag" data-tid="1040000000090249" href="#">centos</a></li><li><a class="tag" data-tid="1040000000090433" href="#">asp.net</a></li><li><a class="tag" data-tid="1040000000089484" href="#">编辑器</a></li><li><a class="tag" data-tid="1040000000091210" href="#">bootstrap</a></li><li><a class="tag" data-tid="1040000000089574" href="#">curl</a></li></ul><ul class="tag-index-section hidden"><li><a class="tag" data-tid="1040000000089571" href="#">html</a></li><li><a class="tag" data-tid="1040000000089409" href="#">html5</a></li><li><a class="tag" data-tid="1040000000089459" href="#">git</a></li><li><a class="tag" data-tid="1040000000125263" href="#">flask</a></li><li><a class="tag" data-tid="1040000000090203" href="#">go</a></li><li><a class="tag" data-tid="1040000000089706" href="#">http</a></li><li><a class="tag" data-tid="1040000000091226" href="#">github</a></li><li><a class="tag" data-tid="1040000000089496" href="#">服务器</a></li><li><a class="tag" data-tid="1040000000145466" href="#">黑客马拉松</a></li><li><a class="tag" data-tid="1040000000089509" href="#">eclipse</a></li><li><a class="tag" data-tid="1040000000090252" href="#">flash</a></li><li><a class="tag" data-tid="1040000000089729" href="#">email</a></li><li><a class="tag" data-tid="1040000000089659" href="#">google</a></li><li><a class="tag" data-tid="1040000000090401" href="#">缓存</a></li><li><a class="tag" data-tid="1040000000090592" href="#">hibernate</a></li><li><a class="tag" data-tid="1040000000090216" href="#">emacs</a></li><li><a class="tag" data-tid="1040000000090217" href="#">firefox</a></li><li><a class="tag" data-tid="1040000000090541" href="#">https</a></li><li><a class="tag" data-tid="1040000000090474" href="#">excel</a></li><li><a class="tag" data-tid="1040000000089479" href="#">facebook</a></li></ul><ul class="tag-index-section hidden"><li><a class="tag" data-tid="1040000000089436" href="#">javascript</a></li><li><a class="tag" data-tid="1040000000089442" href="#">ios</a></li><li><a class="tag" data-tid="1040000000089392" href="#">linux</a></li><li><a class="tag" data-tid="1040000000089449" href="#">java</a></li><li><a class="tag" data-tid="1040000000089733" href="#">jquery</a></li><li><a class="tag" data-tid="1040000000089498" href="#">iphone</a></li><li><a class="tag" data-tid="1040000000090043" href="#">json</a></li><li><a class="tag" data-tid="1040000000090793" href="#">java-ee</a></li><li><a class="tag" data-tid="1040000000125504" href="#">internet-explorer</a></li><li><a class="tag" data-tid="1040000000089474" href="#">浏览器</a></li><li><a class="tag" data-tid="1040000000089983" href="#">框架</a></li><li><a class="tag" data-tid="1040000000089516" href="#">jsp</a></li><li><a class="tag" data-tid="1040000000144814" href="#">jquery插件</a></li><li><a class="tag" data-tid="1040000000119985" href="#">ios6</a></li><li><a class="tag" data-tid="1040000000126528" href="#">开放源代码</a></li><li><a class="tag" data-tid="1040000000090257" href="#">iframe</a></li><li><a class="tag" data-tid="1040000000132655" href="#">ip</a></li><li><a class="tag" data-tid="1040000000090371" href="#">开放平台</a></li><li><a class="tag" data-tid="1040000000090625" href="#">加密</a></li><li><a class="tag" data-tid="1040000000160277" href="#">linux-kernel</a></li></ul><ul class="tag-index-section hidden"><li><a class="tag" data-tid="1040000000089387" href="#">php</a></li><li><a class="tag" data-tid="1040000000089534" href="#">python</a></li><li><a class="tag" data-tid="1040000000089439" href="#">mysql</a></li><li><a class="tag" data-tid="1040000000137810" href="#">七牛云存储</a></li><li><a class="tag" data-tid="1040000000090209" href="#">objective-c</a></li><li><a class="tag" data-tid="1040000000090145" href="#">nginx</a></li><li><a class="tag" data-tid="1040000000089918" href="#">node.js</a></li><li><a class="tag" data-tid="1040000000089488" href="#">mongodb</a></li><li><a class="tag" data-tid="1040000000089899" href="#">前端</a></li><li><a class="tag" data-tid="1040000000090220" href="#">macosx</a></li><li><a class="tag" data-tid="1040000000089466" href="#">mac</a></li><li><a class="tag" data-tid="1040000000089432" href="#">nosql</a></li><li><a class="tag" data-tid="1040000000090338" href="#">markdown</a></li><li><a class="tag" data-tid="1040000000090701" href="#">oracle</a></li><li><a class="tag" data-tid="1040000000115090" href="#">面试题</a></li><li><a class="tag" data-tid="1040000000090193" href="#">oop</a></li><li><a class="tag" data-tid="1040000000089674" href="#">mfc</a></li><li><a class="tag" data-tid="1040000000089776" href="#">qt</a></li><li><a class="tag" data-tid="1040000000089911" href="#">mvc</a></li><li><a class="tag" data-tid="1040000000115193" href="#">phonegap</a></li></ul><ul class="tag-index-section hidden"><li><a class="tag" data-tid="1040000000089399" href="#">segmentfault</a></li><li><a class="tag" data-tid="1040000000089646" href="#">ruby-on-rails</a></li><li><a class="tag" data-tid="1040000000089699" href="#">ruby</a></li><li><a class="tag" data-tid="1040000000089524" href="#">算法</a></li><li><a class="tag" data-tid="1040000000089846" href="#">数据库</a></li><li><a class="tag" data-tid="1040000000089467" href="#">vim</a></li><li><a class="tag" data-tid="1040000000090245" href="#">ubuntu</a></li><li><a class="tag" data-tid="1040000000089669" href="#">shell</a></li><li><a class="tag" data-tid="1040000000091266" href="#">symfony</a></li><li><a class="tag" data-tid="1040000000090049" href="#">sql</a></li><li><a class="tag" data-tid="1040000000089431" href="#">redis</a></li><li><a class="tag" data-tid="1040000000126097" href="#">sublime-text</a></li><li><a class="tag" data-tid="1040000000089688" href="#">ssh</a></li><li><a class="tag" data-tid="1040000000089836" href="#">typecho</a></li><li><a class="tag" data-tid="1040000000089924" href="#">数组</a></li><li><a class="tag" data-tid="1040000000089447" href="#">svn</a></li><li><a class="tag" data-tid="1040000000116331" href="#">tornado</a></li><li><a class="tag" data-tid="1040000000089809" href="#">socket</a></li><li><a class="tag" data-tid="1040000000090354" href="#">sqlite</a></li><li><a class="tag" data-tid="1040000000089799" href="#">数据库设计</a></li></ul><ul class="tag-index-section hidden"><li><a class="tag" data-tid="1040000000089794" href="#">web</a></li><li><a class="tag" data-tid="1040000000117807" href="#">web前端开发</a></li><li><a class="tag" data-tid="1040000000089653" href="#">正则表达式</a></li><li><a class="tag" data-tid="1040000000089579" href="#">xcode</a></li><li><a class="tag" data-tid="1040000000090818" href="#">微信</a></li><li><a class="tag" data-tid="1040000000089709" href="#">windows</a></li><li><a class="tag" data-tid="1040000000089914" href="#">wordpress</a></li><li><a class="tag" data-tid="1040000000126696" href="#">又拍云存储</a></li><li><a class="tag" data-tid="1040000000089417" href="#">网站</a></li><li><a class="tag" data-tid="1040000000089481" href="#">网络</a></li><li><a class="tag" data-tid="1040000000125894" href="#">新浪微博</a></li><li><a class="tag" data-tid="1040000000090430" href="#">网页爬虫</a></li><li><a class="tag" data-tid="1040000000189880" href="#">微信公众平台</a></li><li><a class="tag" data-tid="1040000000090121" href="#">微博</a></li><li><a class="tag" data-tid="1040000000090507" href="#">性能优化</a></li><li><a class="tag" data-tid="1040000000090740" href="#">web.py</a></li><li><a class="tag" data-tid="1040000000090825" href="#">webapp</a></li><li><a class="tag" data-tid="1040000000090505" href="#">webview</a></li><li><a class="tag" data-tid="1040000000089583" href="#">xml</a></li><li><a class="tag" data-tid="1040000000089604" href="#">移动web开发</a></li></ul></div><ul class="common-search-list" style="display: none;"></ul>
+</div>
+ 
+
+        <div class="p">
+                            <input type="checkbox" disabled=""> 转发到新浪微博 <a tabindex="6" target="_blank" href="http://segmentfault.com/user/settings?tab=auth">绑定 ↩</a>
+                    </div>
+        <div class="p">
+            <input type="submit" value="提交问题" tabindex="7" class="btn btn-xl action w-xxl btn-disabled" disabled="disabled">
+                    </div>
+    </div><!-- end #edit-secondary -->
+</form>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <hr>
+
+      <footer>
+        <p>&copy; Company 2013</p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="dist/js/jquery.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="dist/js/holder.min.js"></script>
+   
+
+</body>
+
+</body>
+</html>

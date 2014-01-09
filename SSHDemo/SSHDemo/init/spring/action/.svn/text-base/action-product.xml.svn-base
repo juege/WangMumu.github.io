@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd"
+	default-autowire="byName">
+	
+	
+	<bean id="productAction" class="com.chinarewards.framework.taobao.product.action.productAction" scope="prototype">
+		<property name="productService" ref="productService"></property>
+	</bean>
+	
+	<bean id="productService" class="com.chinarewards.framework.taobao.product.service.impl.productServiceImpl" >
+		<property name="productDao">
+			<ref local="productDao" />
+		</property>
+	</bean>
+	<bean id="productDao" class="com.chinarewards.framework.taobao.product.dao.impl.productDaoImpl" >
+		<property name="baseDao" ref="baseDao"/> 
+	</bean>
+</beans>
+

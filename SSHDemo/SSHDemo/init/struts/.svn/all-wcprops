@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/cr2/!svn/ver/2005/tbrewards/trunk/init/struts
+END
+struts-store.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/cr2/!svn/ver/1748/tbrewards/trunk/init/struts/struts-store.xml
+END
+struts-customer.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/cr2/!svn/ver/2005/tbrewards/trunk/init/struts/struts-customer.xml
+END
+struts-item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/cr2/!svn/ver/1934/tbrewards/trunk/init/struts/struts-item.xml
+END
+struts-login.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/cr2/!svn/ver/1941/tbrewards/trunk/init/struts/struts-login.xml
+END
+struts-shop.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/cr2/!svn/ver/1867/tbrewards/trunk/init/struts/struts-shop.xml
+END
+struts-sunReward.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/cr2/!svn/ver/1727/tbrewards/trunk/init/struts/struts-sunReward.xml
+END
+struts-product.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/cr2/!svn/ver/1875/tbrewards/trunk/init/struts/struts-product.xml
+END

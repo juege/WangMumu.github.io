@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- 店铺收藏 -->
+	<package name="storeShop" extends="struts-default">
+		<action name="storeShop" class="storeShopAction">
+			<result name="success" />
+		</action>
+
+
+	</package>
+
+	<!-- 商品收藏 -->
+	<package name="storeItem" extends="struts-default">
+		<action name="storeItem" class="storeItemAction">
+			<result name="success" />
+		</action>
+
+		<action name="checkItem" class="storeItemAction" method="checkItemcats">
+		</action>
+
+		<action name="favoriteItemcats" class="storeItemAction" method="saveItemcats">
+		</action>
+
+		<action name="finditemcats" class="storeItemAction" method="findItemcatsAction">
+			<result name="getitemcats">WEB-INF/pages/storeItem.jsp</result>
+		</action>
+
+		<action name="addFavoriteShop" class="storeShopAction" method="addShopAction">
+		</action>
+
+		<action name="findFavoriteShop" class="storeShopAction" method="findShopAction">
+			<result name="getshop">WEB-INF/pages/storeShop.jsp</result>
+		</action>
+
+	</package>
+	<package name="delShop" extends="json-default">
+
+		<action name="delShop" class="storeShopAction" method="delShop">
+			<result name="success" type="json">
+				<!-- 这里指定将被Struts2序列化的属性，该属性在action中必须有对应的getter方法 -->
+				<param name="root">message</param>
+
+			</result>
+
+
+		</action>
+	</package>
+	<package name="delitemcats" extends="json-default">
+		<action name="delitemcats" class="storeItemAction" method="delItemcatsAction">
+			<result name="success" type="json">
+				<!-- 这里指定将被Struts2序列化的属性，该属性在action中必须有对应的getter方法 -->
+				<param name="root">message</param>
+			</result>
+		</action>
+	</package>
+
+</struts>

@@ -1,0 +1,12 @@
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="sunReward" extends="json-default">
+		<action name="findTaobaoReward" class="sunRewardAction" method="findTaobaoReward">
+			<result name="success" type="json">
+				<param name="root">rewardList</param>
+			</result>
+		</action>
+	</package>
+</struts>

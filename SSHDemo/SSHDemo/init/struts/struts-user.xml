@@ -1,0 +1,20 @@
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="user" extends="struts-default">
+		<action name="addUser" class="userAction"
+			method="addUser">
+			<result name="success">WEB-INF/page/user/add_user.jsp</result>
+		</action>
+		<action name="saveUser" class="userAction"
+			method="saveUser">
+			<result name="success">WEB-INF/page/user/list_user.jsp</result>
+		</action>
+		<action name="listUser" class="userAction"
+			method="listUser">
+			<result name="success">WEB-INF/page/user/list_user.jsp</result>
+		</action>
+	</package>
+
+</struts>

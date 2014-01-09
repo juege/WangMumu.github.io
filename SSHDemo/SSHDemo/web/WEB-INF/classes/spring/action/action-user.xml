@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:cache="http://www.springframework.org/schema/cache" xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+http://www.springframework.org/schema/tx
+http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-3.0.xsd
+http://www.springframework.org/schema/util 
+http://www.springframework.org/schema/util/spring-util-3.0.xsd
+http://www.springframework.org/schema/cache 
+http://www.springframework.org/schema/cache/spring-cache.xsd
+http://www.springframework.org/schema/task 
+http://www.springframework.org/schema/task/spring-task-3.0.xsd
+http://www.springframework.org/schema/aop
+http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+
+    <!-- Struts Action  -->
+	<bean id="userAction" class="com.coe.user.action.UserAction" scope="prototype">
+		<!-- 注意ACTION 里属性 name 和 这里类目一致 -->
+		<property name="userService">
+			<ref local="userService" />
+		</property>
+	</bean>
+    <!-- SERVICE层配置 -->
+	<bean id="userService" class="com.coe.user.service.impl.UserServiceImpl" >
+		<!-- 注意ACTION 里属性 name 和 这里类目一致 -->
+		<property name="userDao">
+			<ref local="userDao" />
+		</property>
+	</bean>
+	<!-- DAO层配置 -->
+	<bean id="userDao" class="com.coe.user.dao.impl.UserDaoImpl" >
+		<!-- 注意ACTION 里属性 name 和 这里类目一致 -->
+		<property name="baseDao" ref="baseDao"/> 
+	</bean>
+
+
+</beans>

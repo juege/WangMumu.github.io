@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/cr2/!svn/ver/1959/tbrewards/trunk/init/spring
+END
+applicationContext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/cr2/!svn/ver/1959/tbrewards/trunk/init/spring/applicationContext.xml
+END
+applicationContext-action.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/cr2/!svn/ver/1727/tbrewards/trunk/init/spring/applicationContext-action.xml
+END
+application-service-local.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/cr2/!svn/ver/1727/tbrewards/trunk/init/spring/application-service-local.xml
+END

@@ -1,0 +1,73 @@
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+	<package name="customerAjax" extends="json-default" namespace="">
+		<action name="checkUserAccountForAjax" class="customerAction" method="checkUserAccount">
+			<result type="json" name="ajax_useraccount">
+				<param name="root">result</param>
+			</result>
+		</action>
+	</package>
+	
+
+	<package name="customer" extends="json-default">
+	
+		<interceptors>
+			<interceptor name="invocationToken"
+				class="com.chinarewards.framework.interceptor.TokenAtionInterceptor"></interceptor>
+			<interceptor name="urlGoToAction" class="com.chinarewards.framework.interceptor.URLGoToActionInterceptor"></interceptor>
+			<interceptor-stack name="customerDefaultStack">
+				<interceptor-ref name="invocationToken" />
+				<interceptor-ref name="urlGoToAction" />
+				<interceptor-ref name="defaultStack" />
+			</interceptor-stack>
+			<interceptor-stack name="strutsDefaultStack">
+				<interceptor-ref name="urlGoToAction" />
+				<interceptor-ref name="defaultStack" />
+			</interceptor-stack>
+		</interceptors>
+		
+		<!-- 定义自己的默认堆 -->
+		<default-interceptor-ref name="strutsDefaultStack" />
+		
+		<action name="indexLogin" class="customerAction" method="indexLogin">
+<!-- 			<result name="success" type="redirectAction">/findHomeItems.action</result> -->
+<!-- 			<result name="toLoginValidate" type="redirectAction">userLoginSendCodePage</result> -->
+<!-- 			<result name="login_page">WEB-INF/pages/login.jsp</result> -->
+			<result name="success" type="json">
+			   <param name="root">message</param>
+			</result>
+		</action>
+		
+		<action name="findTbUser" class="customerAction" method="findTbUser">
+			<result name="openUrl">WEB-INF/pages/loginPage.jsp</result>
+			<result name="successUrl" type="redirectAction">findTB.action</result>
+		</action>
+		
+		<action name="login" class="customerAction" method="login">
+			<result name="success">index.html</result>
+			<result name="toLoginValidate" type="redirectAction">userLoginSendCodePage</result>
+			<result name="login_page">WEB-INF/pages/user/login.jsp</result>
+			<result name="member_page" type="redirectAction">memberPage</result>
+			<result name="goingToURL" type="redirect">${goingToURL}</result> 
+			<result name="goingToHorde">WEB-INF/pages/horde/hordeLogin.jsp</result>
+			<result name="hordeGrant" type="chain">hordeGrant</result>
+		</action>
+		
+		<action name="loginPage" class="customerAction" method="loginPage">
+			<result name="login_page">WEB-INF/pages/user/login.jsp</result>
+		</action>
+		
+	
+		<action name="quit" class="customerAction" method="quitWithTrancatGoToURL">
+			<result name="success">index.html</result>
+		</action>
+		
+		<action name="getUserInfoForAjax" class="customerAction" method="getUserInfoForAjax">			
+		</action>
+		
+		
+	</package>
+</struts>
